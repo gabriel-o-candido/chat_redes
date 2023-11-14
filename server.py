@@ -54,7 +54,7 @@ def novoCliente(conn, ender):
         historico_mensagens.append(msgNome)
 
 # Configurações do servidor
-HOST = '26.4.7.139'
+HOST = 'localhost'
 PORT = 9999
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sock.bind((HOST, PORT))
