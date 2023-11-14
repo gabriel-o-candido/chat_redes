@@ -26,7 +26,7 @@ def novoCliente(conn, ender):
         return
 
     print(f"{nome} entrou no chat, IP: {ender[0]}, PORTA: {ender[1]}")
-    enviarParaTodos(f"{nome} entrou no chat")
+    enviarParaTodos(f"{nome} entrou no chat\n")
 
     # Enviar histórico de mensagens para o novo cliente
     for mensagem in historico_mensagens:
@@ -54,7 +54,7 @@ def novoCliente(conn, ender):
         historico_mensagens.append(msgNome)
 
 # Configurações do servidor
-HOST = 'localhost'
+HOST = '26.4.7.139'
 PORT = 9999
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sock.bind((HOST, PORT))
