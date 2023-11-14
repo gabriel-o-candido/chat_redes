@@ -1,6 +1,7 @@
 import socket
 import threading
 
+#teste do git
 # Lista para armazenar os sockets dos clientes conectados
 clientes_conectados = []
 historico_mensagens = []
